@@ -1,100 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: black;
-  color: white;
-}
+  body {
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color: white;
+  }
 
-.header-top div>select,
-button {
-  outline: none;
-  background-color: transparent;
-  color: white;
-  padding: 7px 2px;
-  font-size: 12px;
-  outline: none;
-  box-sizing: border-box;
-}
+  .header-top div>select, button {
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding: 7px 4px;
+    font-size: 12px;
+    outline: none;
+  }
 
-.header-top {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix-background-home.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
+  .header-top div>select {
+    background-color: rgba(0, 0, 0, 0.767);
+  }
 
-.sign-in,
-.mail-list>button {
-  background-color: #e50914;
-  font-size: 15px;
-  border-radius: 7px;
-  padding: 7px 12px;
-  margin-left: 20px;
-}
+  .header-top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix-background-home.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+  }
 
-.top-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 160px;
-  font-family: 'Lato', sans-serif;
-  position: relative;
-}
+  .sign-in,
+  .mail-list>button {
+    background-color: #e50914;
+    font-size: 15px;
+    border-radius: 7px;
+    padding: 7px 12px;
+    margin-left: 20px;
+  }
 
-.netflix-logo {
-  width: 150px;
-}
+  .top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 160px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+  }
 
-.homepage-text {
-  font-size: 25px;
-  position: absolute;
-  text-align: center;
-  bottom: 200px;
-  width: 100%;
-}
+  .netflix-logo {
+    width: 150px;
+  }
 
-.homepage-text>h2,
-h3 {
-  font-weight: 100;
-  font-size: 25px;
-  margin-top: 15x;
-  padding-top: 15px;
-}
+  .homepage-text {
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    bottom: 200px;
+    width: 100%;
+  }
 
-.mail-list{
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
+  .homepage-text>h2,
+  h3 {
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 15x;
+    padding-top: 15px;
+  }
 
-.mail-list>input {
-  width: 300px;
-  height: 20px;
-  padding: 10px;
-}
+  .mail-list{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
 
-.mail-list>button {
-  font-family: 'Lato', sans-serif;
-  height: 45px;
-  width: 160px;
-  font-size: 25px;
-  text-align: center;
-}
+  .mail-list>input {
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+  }
 
-footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 30px;
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-}
+  .mail-list>button {
+    font-family: 'Lato', sans-serif;
+    height: 45px;
+    width: 160px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+  }
