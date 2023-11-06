@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Netflix Clone</title>
 	<link rel="stylesheet" href="netflix-style.css">
 </head>
-<body>
-	<header>
-		<h1>Netflix</h1>
-		<input type="search" placeholder="Search for movies, TV shows">
 
-		<nav>
-			<a href="#">Home</a>
-			<a href="#browse">Browse</a>
-			<a href="#my-watchlist">My Watchlist</a>
+<body>
+	<header class="header-top">
+		<nav class="top-navigation">
+			<img src="images/netflix-logo.png" class="netflix-logo" alt="netflix-logo">
+
+			<div class="top-right-navigation">
+				<select name="language" id="select-language">
+					<option value="english">English</option>
+					<option value="tamil">Tamil</option>
+					<option value="hindi">Hindi</option>
+					<option value="kannada">Kannada</option>
+					<option value="telugu">Telugu</option>
+				</select>
+				<button type="button" class="sign-in">Sign In</button>
+			</div>
+
 		</nav>
 	</header>
 
-	<main>
-		<section id="browse">
-			<h2>Browse</h2>
-			<ul>
-				<li><a href="#">Movies</a></li>
-				<li><a href="#">TV Shows</a></li>
-			</ul>
-		</section>
 
-		<section id="my-watchlist">
-			<h2>My Watchlist</h2>
-			<ul>
-        <li><a href="#">Movie 1</a></li>
-        <li><a href="#">TV Show 1</a></li>
-      </ul>
-    </section>
-		</section>
-	</main>
-	
+
 	<footer>
 		<p>Netflix Clone by <strong><a href="https://github.com/g-wtham">GOWTHAM</strong></a></p>
 	</footer>
 </body>
+
 </html>
