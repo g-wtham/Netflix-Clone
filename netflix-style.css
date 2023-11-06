@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+#browse{
+  float: left;
+  width: 50%;
+}
+
+#my-watchlist{
+  float: right;
+  width: 50%;
+}
+
+header{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  margin: 30px;
+}
