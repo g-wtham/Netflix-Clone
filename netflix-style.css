@@ -3,6 +3,7 @@
   * {
     margin: 0;
     padding: 0;
+    max-width: 100%;
   }
 
   body {
@@ -11,55 +12,71 @@
     color: white;
   }
 
-  .header-top div>select, button {
+  .header-top {
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix-background-home.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+  }
+
+  .header-top div>select,
+  button {
     outline: none;
     background-color: transparent;
     color: white;
-    padding: 7px 4px;
-    font-size: 12px;
-    outline: none;
+    padding: 7px 14px;
+    font-size: 15px;
   }
 
   .header-top div>select {
     background-color: rgba(0, 0, 0, 0.767);
   }
 
-  .header-top {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix-background-home.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-  }
 
   .sign-in,
   .mail-list>button {
     background-color: #e50914;
     font-size: 15px;
-    border-radius: 7px;
-    padding: 7px 12px;
-    margin-left: 20px;
+    border-radius: 5px;
+    width: 100%;
   }
 
   .top-navigation {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 25px 160px;
+    flex-shrink: 1;
+    padding: 25px 10px;
     font-family: 'Lato', sans-serif;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 120px;
+  }
+
+  .top-right-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
   }
 
   .netflix-logo {
-    width: 150px;
+    max-width: 150px;
+
   }
 
   .homepage-text {
-    font-size: 25px;
     position: absolute;
     text-align: center;
     bottom: 200px;
     width: 100%;
+
   }
 
   .homepage-text>h2,
@@ -70,7 +87,13 @@
     padding-top: 15px;
   }
 
-  .mail-list{
+  .text-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+
+  .mail-list {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -100,4 +123,24 @@
     text-align: center;
     position: fixed;
     bottom: 0;
+  }
+
+  @media (max-width: 530px) {
+    .netflix-logo {
+      width: 100px;
+      height: fit-content;
+      margin-right: 50px;
+    }
+
+    .header-top div>select {
+      font-size: 10px;
+    }
+
+    .sign-in,
+    .mail-list>button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+    }
   }
