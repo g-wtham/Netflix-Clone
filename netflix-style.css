@@ -92,6 +92,10 @@
   }
 
   .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
     gap: 20px;
