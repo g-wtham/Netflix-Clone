@@ -10,6 +10,7 @@
     font-family: 'Lato', sans-serif;
     background-color: black;
     color: white;
+    width: 100%;
   }
 
   .header-top {
@@ -21,7 +22,6 @@
     background-position: center;
     width: 100%;
     height: 100vh;
-    padding: 0 20px;
   }
 
   .header-top div>select,
@@ -34,7 +34,7 @@
   }
 
   .header-top div>select {
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(88, 48, 48, 0.767);
   }
 
 
@@ -54,8 +54,8 @@
     font-family: 'Lato', sans-serif;
     position: relative;
     width: 100%;
-    max-width: 100%;
-    margin: 10px 120px;
+    max-width: 100%;  
+    margin: 0 120px;
   }
 
   .top-right-navigation {
@@ -63,7 +63,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
 
   .netflix-logo {
@@ -73,17 +73,21 @@
 
   .homepage-text {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    bottom: 200px;
+    bottom: 20vh;
     width: 100%;
-
+    z-index: 10;
   }
 
   .homepage-text>h2,
   h3 {
     font-weight: 100;
     font-size: 25px;
-    margin-top: 15x;
+    margin-down: 50%;
     padding-top: 15px;
   }
 
@@ -96,6 +100,7 @@
   .mail-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px;
   }
 
@@ -103,6 +108,9 @@
     width: 300px;
     height: 20px;
     padding: 10px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
   }
 
   .mail-list>button {
@@ -111,36 +119,53 @@
     width: 160px;
     font-size: 25px;
     text-align: center;
+    margin: 10px 10px;
   }
 
   footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    vertical-align: middle;
-    margin: 30px;
+    align-items: center;
     width: 100%;
+    margin-bottom: 20px;
     text-align: center;
     position: fixed;
     bottom: 0;
   }
 
-  @media (max-width: 530px) {
+  @media (max-width: 600px) {
     .netflix-logo {
       width: 100px;
       height: fit-content;
-      margin-right: 50px;
+    }
+
+    .top-navigation{
+      margin: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-right-navigation{
+      gap: 10px;
     }
 
     .header-top div>select {
-      font-size: 10px;
+      font-size: 15px;
     }
 
-    .sign-in,
-    .mail-list>button {
+    .sign-in, .email-class, .mail-list>button {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 10px;
+      font-size: 15px;
+      gap: 10px;
+      margin: 10px 0px;
+      align-items: center;
+    }
+
+    .mail-list>button{
+      margin: 10px;
     }
   }
