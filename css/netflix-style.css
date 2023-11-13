@@ -69,11 +69,6 @@
     gap: 20px;
   }
 
-  a{
-    text-decoration: none;
-    color: white;
-  }
-
   .netflix-logo {
     max-width: 150px;
 
@@ -187,7 +182,6 @@
       gap: 10px;
       margin: 10px 0px;
       align-items: center;
-      text-decoration: none;
     }
 
     .mail-list>button {
