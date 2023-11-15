@@ -79,6 +79,11 @@
 
   }
 
+a{
+    text-decoration: none;
+    color: white;
+  }
+
   div>.text-content>.big-text {
     font-size: 3rem;
     font-weight: bolder;
